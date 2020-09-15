@@ -1,0 +1,35 @@
+@* Generic Parameter Type *@
+@typeparam TItem            
+
+@if(List == null)
+{
+    @if (NullContent != null)
+    {
+        @NullContent
+    } else 
+    {
+        <text>Loading...</text>
+    }
+} else if (List.Count == 0)
+{
+    @if (EmptyContent != null)
+    {
+        @EmptyContent
+    } else 
+    {
+        <text>There are no records to display</text>
+    }
+} else {
+    @foreach(var element in List)
+    {
+        @ElementTemplate(element)
+    }
+}
+
+
+@code {
+    [Parameter] public List<TItem> List { get; set; } 
+    [Parameter] public RenderFragment<TItem> ElementTemplate { get; set; }
+    [Parameter] public RenderFragment NullContent { get; set; }
+    [Parameter] public RenderFragment EmptyContent { get; set; }
+}

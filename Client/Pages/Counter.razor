@@ -1,0 +1,47 @@
+@inherits CounterBase
+@page "/counter"
+
+@*
+@inject SingletonService SingletonService
+@inject TransientService TransientService
+*@
+
+<h1 style="color: @AppState.Color; font-size: @AppState.Size;">Counter</h1> 
+
+<div style="display: flex;">
+    <div style="width: 150px;">
+        <select @bind="AppState.Color" class="form-control" style="margin-top: 15px;">
+            <option value="green">Green</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+        </select>
+    </div>
+    <div style="width: 150px;">
+        <select @bind="AppState.Size" class="form-control" style="margin-top: 15px;">
+            <option value="20px">20px</option>
+            <option value="30px">30px</option>
+            <option value="40px">40px</option>
+        </select>
+    </div>
+</div>
+
+<p>Current count: @currentCount</p>
+<p>Transient value: @TransientService.Value</p>
+<p>Singleton value: @SingletonService.Value</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+<button class="btn btn-primary" @onclick="IncrementCountJavaScript">Click me JavaScript</button>
+
+
+@code {
+    /* // Note! Moved to Counter.razor.cs
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+        TransientService.Value = currentCount;
+        SingletonService.Value = currentCount;
+    }
+    */
+}

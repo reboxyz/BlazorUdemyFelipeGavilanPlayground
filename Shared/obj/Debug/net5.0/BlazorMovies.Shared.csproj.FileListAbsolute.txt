@@ -1,0 +1,9 @@
+/Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Shared/bin/Debug/net5.0/BlazorMovies.Shared.deps.json
+/Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Shared/bin/Debug/net5.0/BlazorMovies.Shared.dll
+/Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Shared/bin/Debug/net5.0/BlazorMovies.Shared.pdb
+/Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Shared/obj/Debug/net5.0/BlazorMovies.Shared.csprojAssemblyReference.cache
+/Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Shared/obj/Debug/net5.0/BlazorMovies.Shared.AssemblyInfoInputs.cache
+/Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Shared/obj/Debug/net5.0/BlazorMovies.Shared.AssemblyInfo.cs
+/Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Shared/obj/Debug/net5.0/BlazorMovies.Shared.csproj.CoreCompileInputs.cache
+/Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Shared/obj/Debug/net5.0/BlazorMovies.Shared.dll
+/Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Shared/obj/Debug/net5.0/BlazorMovies.Shared.pdb

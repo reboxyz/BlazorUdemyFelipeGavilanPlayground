@@ -1,0 +1,30 @@
+﻿@page "/"
+@inject IRepository MovieInMemoryRepository
+
+<h3 style="color: @AppState.Color;">Home</h3>
+
+<MoviesList 
+    Movies="movies"
+/>
+
+<button @onclick="AddNewMovie">Add New Movie</button>
+
+@code {
+    [CascadingParameter] public AppState AppState { get; set; }
+
+    private List<Movie> movies;
+
+    protected override void OnInitialized()
+    {
+        movies = MovieInMemoryRepository.GetMovies();
+    }    
+
+    private void AddNewMovie()
+    {
+        movies.Add(new Movie{
+            Title = "This is new movie",
+            ReleaseDate = DateTime.Now
+        });
+    }
+
+}
