@@ -193,13 +193,13 @@
       "mscorlib.dll": "sha256-pzeEoLNioXrr+sQaJ+n4KMRPYMhCCrtCpOeLccHj9aw=",
       "netstandard.dll": "sha256-jv9OIGU0I7FlDShvCJbhi7YOPw9VM4zTo+hd00qCYws=",
       "System.Private.CoreLib.dll": "sha256-quErEx1KCzELE95rEdDnbyG2PKvpuAJCVNyC4\/WD1z8=",
-      "BlazorMovies.Shared.dll": "sha256-VsgdhN1ILKqQdPsu3G+QmIePy46OZHs01i8Tfz8zIFg=",
-      "BlazorMovies.Client.dll": "sha256-tLEdLag9naoARa7Dbzgzlx+h6MkaekCS1QVoYoQbogw="
+      "BlazorMovies.Shared.dll": "sha256-CIVhj5mAFLLuKRiOn6KL9onM0c02FiixfFPcL9Ga4WM=",
+      "BlazorMovies.Client.dll": "sha256-kmbqH0WGDzBV37pHvDRMoKkOfmkvdWaYCcoC4JtWMr8="
     },
     "dynamicAssembly": null,
     "pdb": {
-      "BlazorMovies.Shared.pdb": "sha256-bal7n2V4P+G3LwUZPC6XbPwFtVfpfpHuLZZHUYnmM7w=",
-      "BlazorMovies.Client.pdb": "sha256-Ioo23dVlZdz3oS\/vJTwIlOBhv7W4fxSHAlAdFix+U58="
+      "BlazorMovies.Shared.pdb": "sha256-OIXIuXmA3yUy2PNOgClVtKR2TNPe5RlOzN+RfDJnQHM=",
+      "BlazorMovies.Client.pdb": "sha256-ehMqFaHHxT4NY1j185joZCBODKxh3vFRpDXps1c30k0="
     },
     "runtime": {
       "dotnet.wasm": "sha256-\/naE+7n4c+w8QbCIig7eL4YE+VuXbIXU7fnKW7wXU\/o=",

@@ -12,72 +12,6 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": 1739563675,
-        "Kind": "Components.Component",
-        "Name": "BlazorMovies.Client.App",
-        "AssemblyName": "BlazorMovies.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorMovies.Client.App"
-        }
-      },
-      {
-        "HashCode": -1293970108,
-        "Kind": "Components.Component",
-        "Name": "BlazorMovies.Client.App",
-        "AssemblyName": "BlazorMovies.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorMovies.Client.App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorMovies.Client.App",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 394083838,
-        "Kind": "Components.Component",
-        "Name": "BlazorMovies.Client.Pages.FetchData",
-        "AssemblyName": "BlazorMovies.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorMovies.Client.Pages.FetchData"
-        }
-      },
-      {
-        "HashCode": 391631744,
-        "Kind": "Components.Component",
-        "Name": "BlazorMovies.Client.Pages.FetchData",
-        "AssemblyName": "BlazorMovies.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorMovies.Client.Pages.FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorMovies.Client.Pages.FetchData",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 1684607330,
         "Kind": "Components.Component",
         "Name": "BlazorMovies.Client.Pages.CounterBase",
@@ -144,6 +78,158 @@
         }
       },
       {
+        "HashCode": 394083838,
+        "Kind": "Components.Component",
+        "Name": "BlazorMovies.Client.Pages.FetchData",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorMovies.Client.Pages.FetchData"
+        }
+      },
+      {
+        "HashCode": 391631744,
+        "Kind": "Components.Component",
+        "Name": "BlazorMovies.Client.Pages.FetchData",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorMovies.Client.Pages.FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorMovies.Client.Pages.FetchData",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 412251040,
+        "Kind": "Components.Component",
+        "Name": "BlazorMovies.Client.Pages.Genres.CreateGenre",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "CreateGenre"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorMovies.Client.Pages.Genres.CreateGenre"
+        }
+      },
+      {
+        "HashCode": -1386157521,
+        "Kind": "Components.Component",
+        "Name": "BlazorMovies.Client.Pages.Genres.CreateGenre",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorMovies.Client.Pages.Genres.CreateGenre"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorMovies.Client.Pages.Genres.CreateGenre",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1597806228,
+        "Kind": "Components.Component",
+        "Name": "BlazorMovies.Client.Pages.Genres.EditGenre",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "EditGenre"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "GenreId",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "GenreId"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorMovies.Client.Pages.Genres.EditGenre"
+        }
+      },
+      {
+        "HashCode": -2064853325,
+        "Kind": "Components.Component",
+        "Name": "BlazorMovies.Client.Pages.Genres.EditGenre",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorMovies.Client.Pages.Genres.EditGenre"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "GenreId",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "GenreId"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorMovies.Client.Pages.Genres.EditGenre",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 2132849636,
+        "Kind": "Components.Component",
+        "Name": "BlazorMovies.Client.Pages.Genres.IndexGenres",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "IndexGenres"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorMovies.Client.Pages.Genres.IndexGenres"
+        }
+      },
+      {
+        "HashCode": -891486450,
+        "Kind": "Components.Component",
+        "Name": "BlazorMovies.Client.Pages.Genres.IndexGenres",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorMovies.Client.Pages.Genres.IndexGenres"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorMovies.Client.Pages.Genres.IndexGenres",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": -1911141757,
         "Kind": "Components.Component",
         "Name": "BlazorMovies.Client.Pages.Index",
@@ -173,6 +259,490 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "BlazorMovies.Client.Pages.Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1346966269,
+        "Kind": "Components.Component",
+        "Name": "BlazorMovies.Client.Pages.Movies.CreateMovie",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "CreateMovie"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorMovies.Client.Pages.Movies.CreateMovie"
+        }
+      },
+      {
+        "HashCode": -89508257,
+        "Kind": "Components.Component",
+        "Name": "BlazorMovies.Client.Pages.Movies.CreateMovie",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorMovies.Client.Pages.Movies.CreateMovie"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorMovies.Client.Pages.Movies.CreateMovie",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1320667194,
+        "Kind": "Components.Component",
+        "Name": "BlazorMovies.Client.Pages.Movies.DetailsMovie",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "DetailsMovie"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "MovieId",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "MovieId"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "MovieTitle",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "MovieTitle"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorMovies.Client.Pages.Movies.DetailsMovie"
+        }
+      },
+      {
+        "HashCode": -999296198,
+        "Kind": "Components.Component",
+        "Name": "BlazorMovies.Client.Pages.Movies.DetailsMovie",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorMovies.Client.Pages.Movies.DetailsMovie"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "MovieId",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "MovieId"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "MovieTitle",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "MovieTitle"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorMovies.Client.Pages.Movies.DetailsMovie",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1200796840,
+        "Kind": "Components.Component",
+        "Name": "BlazorMovies.Client.Pages.Movies.EditMovie",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "EditMovie"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "MovieId",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "MovieId"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorMovies.Client.Pages.Movies.EditMovie"
+        }
+      },
+      {
+        "HashCode": -1269603231,
+        "Kind": "Components.Component",
+        "Name": "BlazorMovies.Client.Pages.Movies.EditMovie",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorMovies.Client.Pages.Movies.EditMovie"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "MovieId",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "MovieId"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorMovies.Client.Pages.Movies.EditMovie",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 744833456,
+        "Kind": "Components.Component",
+        "Name": "BlazorMovies.Client.Pages.People.CreatePerson",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "CreatePerson"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorMovies.Client.Pages.People.CreatePerson"
+        }
+      },
+      {
+        "HashCode": -1106600484,
+        "Kind": "Components.Component",
+        "Name": "BlazorMovies.Client.Pages.People.CreatePerson",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorMovies.Client.Pages.People.CreatePerson"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorMovies.Client.Pages.People.CreatePerson",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1410817135,
+        "Kind": "Components.Component",
+        "Name": "BlazorMovies.Client.Pages.People.EditPerson",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "EditPerson"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "PersonId",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "PersonId"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorMovies.Client.Pages.People.EditPerson"
+        }
+      },
+      {
+        "HashCode": 939294104,
+        "Kind": "Components.Component",
+        "Name": "BlazorMovies.Client.Pages.People.EditPerson",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorMovies.Client.Pages.People.EditPerson"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "PersonId",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "PersonId"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorMovies.Client.Pages.People.EditPerson",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -369000325,
+        "Kind": "Components.Component",
+        "Name": "BlazorMovies.Client.Pages.People.IndexPeople",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "IndexPeople"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorMovies.Client.Pages.People.IndexPeople"
+        }
+      },
+      {
+        "HashCode": -116613545,
+        "Kind": "Components.Component",
+        "Name": "BlazorMovies.Client.Pages.People.IndexPeople",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorMovies.Client.Pages.People.IndexPeople"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorMovies.Client.Pages.People.IndexPeople",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1739563675,
+        "Kind": "Components.Component",
+        "Name": "BlazorMovies.Client.App",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorMovies.Client.App"
+        }
+      },
+      {
+        "HashCode": -1293970108,
+        "Kind": "Components.Component",
+        "Name": "BlazorMovies.Client.App",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorMovies.Client.App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorMovies.Client.App",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -768230764,
+        "Kind": "Components.Component",
+        "Name": "BlazorMovies.Client.Shared.Confirmation",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Confirmation"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ChildContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "ChildContent",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "onConfirm",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "onConfirm",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "onCancel",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "onCancel",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorMovies.Client.Shared.Confirmation"
+        }
+      },
+      {
+        "HashCode": 1780779926,
+        "Kind": "Components.Component",
+        "Name": "BlazorMovies.Client.Shared.Confirmation",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorMovies.Client.Shared.Confirmation"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ChildContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "ChildContent",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "onConfirm",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "onConfirm",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "onCancel",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "onCancel",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorMovies.Client.Shared.Confirmation",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -876932312,
+        "Kind": "Components.ChildContent",
+        "Name": "BlazorMovies.Client.Shared.Confirmation.ChildContent",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChildContent",
+            "ParentTag": "Confirmation"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "BlazorMovies.Client.Shared.Confirmation.ChildContent",
+          "Components.IsSpecialKind": "Components.ChildContent"
+        }
+      },
+      {
+        "HashCode": -1410078325,
+        "Kind": "Components.ChildContent",
+        "Name": "BlazorMovies.Client.Shared.Confirmation.ChildContent",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChildContent",
+            "ParentTag": "BlazorMovies.Client.Shared.Confirmation"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "BlazorMovies.Client.Shared.Confirmation.ChildContent",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -218969732,
+        "Kind": "Components.Component",
+        "Name": "BlazorMovies.Client.Shared.CustomNotFound",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "CustomNotFound"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorMovies.Client.Shared.CustomNotFound"
+        }
+      },
+      {
+        "HashCode": -1616122310,
+        "Kind": "Components.Component",
+        "Name": "BlazorMovies.Client.Shared.CustomNotFound",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorMovies.Client.Shared.CustomNotFound"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorMovies.Client.Shared.CustomNotFound",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -465,7 +1035,7 @@
         }
       },
       {
-        "HashCode": -1663139795,
+        "HashCode": 852815984,
         "Kind": "Components.Component",
         "Name": "BlazorMovies.Client.Shared.IndividualMovie",
         "AssemblyName": "BlazorMovies.Client",
@@ -486,14 +1056,6 @@
           },
           {
             "Kind": "Components.Component",
-            "Name": "DisplayButtons",
-            "TypeName": "System.Boolean",
-            "Metadata": {
-              "Common.PropertyName": "DisplayButtons"
-            }
-          },
-          {
-            "Kind": "Components.Component",
             "Name": "DeleteMovie",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<BlazorMovies.Shared.Entities.Movie>",
             "Metadata": {
@@ -508,7 +1070,7 @@
         }
       },
       {
-        "HashCode": -892817854,
+        "HashCode": 1374809050,
         "Kind": "Components.Component",
         "Name": "BlazorMovies.Client.Shared.IndividualMovie",
         "AssemblyName": "BlazorMovies.Client",
@@ -529,14 +1091,6 @@
           },
           {
             "Kind": "Components.Component",
-            "Name": "DisplayButtons",
-            "TypeName": "System.Boolean",
-            "Metadata": {
-              "Common.PropertyName": "DisplayButtons"
-            }
-          },
-          {
-            "Kind": "Components.Component",
             "Name": "DeleteMovie",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<BlazorMovies.Shared.Entities.Movie>",
             "Metadata": {
@@ -548,289 +1102,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "BlazorMovies.Client.Shared.IndividualMovie",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1017712885,
-        "Kind": "Components.Component",
-        "Name": "BlazorMovies.Client.Shared.NavMenu",
-        "AssemblyName": "BlazorMovies.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorMovies.Client.Shared.NavMenu"
-        }
-      },
-      {
-        "HashCode": 1635769656,
-        "Kind": "Components.Component",
-        "Name": "BlazorMovies.Client.Shared.NavMenu",
-        "AssemblyName": "BlazorMovies.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorMovies.Client.Shared.NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorMovies.Client.Shared.NavMenu",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 676743941,
-        "Kind": "Components.Component",
-        "Name": "BlazorMovies.Client.Shared.SurveyPrompt",
-        "AssemblyName": "BlazorMovies.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorMovies.Client.Shared.SurveyPrompt"
-        }
-      },
-      {
-        "HashCode": 200823486,
-        "Kind": "Components.Component",
-        "Name": "BlazorMovies.Client.Shared.SurveyPrompt",
-        "AssemblyName": "BlazorMovies.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorMovies.Client.Shared.SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorMovies.Client.Shared.SurveyPrompt",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -768230764,
-        "Kind": "Components.Component",
-        "Name": "BlazorMovies.Client.Shared.Confirmation",
-        "AssemblyName": "BlazorMovies.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Confirmation"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ChildContent",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Metadata": {
-              "Common.PropertyName": "ChildContent",
-              "Components.ChildContent": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "onConfirm",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "onConfirm",
-              "Components.EventCallback": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "onCancel",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "onCancel",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorMovies.Client.Shared.Confirmation"
-        }
-      },
-      {
-        "HashCode": 1780779926,
-        "Kind": "Components.Component",
-        "Name": "BlazorMovies.Client.Shared.Confirmation",
-        "AssemblyName": "BlazorMovies.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorMovies.Client.Shared.Confirmation"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ChildContent",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Metadata": {
-              "Common.PropertyName": "ChildContent",
-              "Components.ChildContent": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "onConfirm",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "onConfirm",
-              "Components.EventCallback": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "onCancel",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "onCancel",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorMovies.Client.Shared.Confirmation",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -876932312,
-        "Kind": "Components.ChildContent",
-        "Name": "BlazorMovies.Client.Shared.Confirmation.ChildContent",
-        "AssemblyName": "BlazorMovies.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ChildContent",
-            "ParentTag": "Confirmation"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "BlazorMovies.Client.Shared.Confirmation.ChildContent",
-          "Components.IsSpecialKind": "Components.ChildContent"
-        }
-      },
-      {
-        "HashCode": -1410078325,
-        "Kind": "Components.ChildContent",
-        "Name": "BlazorMovies.Client.Shared.Confirmation.ChildContent",
-        "AssemblyName": "BlazorMovies.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ChildContent",
-            "ParentTag": "BlazorMovies.Client.Shared.Confirmation"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "BlazorMovies.Client.Shared.Confirmation.ChildContent",
-          "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 708039402,
-        "Kind": "Components.Component",
-        "Name": "BlazorMovies.Client.Shared.MoviesList",
-        "AssemblyName": "BlazorMovies.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "MoviesList"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Movies",
-            "TypeName": "System.Collections.Generic.List<BlazorMovies.Shared.Entities.Movie>",
-            "Metadata": {
-              "Common.PropertyName": "Movies"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorMovies.Client.Shared.MoviesList"
-        }
-      },
-      {
-        "HashCode": -1310055511,
-        "Kind": "Components.Component",
-        "Name": "BlazorMovies.Client.Shared.MoviesList",
-        "AssemblyName": "BlazorMovies.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorMovies.Client.Shared.MoviesList"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Movies",
-            "TypeName": "System.Collections.Generic.List<BlazorMovies.Shared.Entities.Movie>",
-            "Metadata": {
-              "Common.PropertyName": "Movies"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorMovies.Client.Shared.MoviesList",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -927,6 +1198,145 @@
           "Runtime.Name": "Components.None",
           "Common.TypeName": "BlazorMovies.Client.Shared.MainLayout.Body",
           "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 708039402,
+        "Kind": "Components.Component",
+        "Name": "BlazorMovies.Client.Shared.MoviesList",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "MoviesList"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Movies",
+            "TypeName": "System.Collections.Generic.List<BlazorMovies.Shared.Entities.Movie>",
+            "Metadata": {
+              "Common.PropertyName": "Movies"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorMovies.Client.Shared.MoviesList"
+        }
+      },
+      {
+        "HashCode": -1310055511,
+        "Kind": "Components.Component",
+        "Name": "BlazorMovies.Client.Shared.MoviesList",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorMovies.Client.Shared.MoviesList"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Movies",
+            "TypeName": "System.Collections.Generic.List<BlazorMovies.Shared.Entities.Movie>",
+            "Metadata": {
+              "Common.PropertyName": "Movies"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorMovies.Client.Shared.MoviesList",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1017712885,
+        "Kind": "Components.Component",
+        "Name": "BlazorMovies.Client.Shared.NavMenu",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorMovies.Client.Shared.NavMenu"
+        }
+      },
+      {
+        "HashCode": 1635769656,
+        "Kind": "Components.Component",
+        "Name": "BlazorMovies.Client.Shared.NavMenu",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorMovies.Client.Shared.NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorMovies.Client.Shared.NavMenu",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 676743941,
+        "Kind": "Components.Component",
+        "Name": "BlazorMovies.Client.Shared.SurveyPrompt",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorMovies.Client.Shared.SurveyPrompt"
+        }
+      },
+      {
+        "HashCode": 200823486,
+        "Kind": "Components.Component",
+        "Name": "BlazorMovies.Client.Shared.SurveyPrompt",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorMovies.Client.Shared.SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorMovies.Client.Shared.SurveyPrompt",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -12396,8 +12806,23 @@
       "FileKind": "component"
     },
     {
+      "FilePath": "/Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Client/Shared/CustomNotFound.razor",
+      "TargetPath": "Shared\\CustomNotFound.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "/Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Client/Shared/MainLayout.razor",
       "TargetPath": "Shared\\MainLayout.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Client/Pages/People/CreatePerson.razor",
+      "TargetPath": "Pages\\People\\CreatePerson.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Client/Pages/Genres/CreateGenre.razor",
+      "TargetPath": "Pages\\Genres\\CreateGenre.razor",
       "FileKind": "component"
     },
     {
@@ -12431,6 +12856,21 @@
       "FileKind": "component"
     },
     {
+      "FilePath": "/Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Client/Pages/Genres/IndexGenres.razor",
+      "TargetPath": "Pages\\Genres\\IndexGenres.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Client/Pages/Movies/DetailsMovie.razor",
+      "TargetPath": "Pages\\Movies\\DetailsMovie.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Client/Pages/Movies/EditMovie.razor",
+      "TargetPath": "Pages\\Movies\\EditMovie.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "/Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Client/Shared/IndividualMovie.razor",
       "TargetPath": "Shared\\IndividualMovie.razor",
       "FileKind": "component"
@@ -12448,6 +12888,26 @@
     {
       "FilePath": "/Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Client/Pages/FetchData.razor",
       "TargetPath": "Pages\\FetchData.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Client/Pages/Genres/EditGenre.razor",
+      "TargetPath": "Pages\\Genres\\EditGenre.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Client/Pages/People/EditPerson.razor",
+      "TargetPath": "Pages\\People\\EditPerson.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Client/Pages/Movies/CreateMovie.razor",
+      "TargetPath": "Pages\\Movies\\CreateMovie.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Client/Pages/People/IndexPeople.razor",
+      "TargetPath": "Pages\\People\\IndexPeople.razor",
       "FileKind": "component"
     }
   ],
