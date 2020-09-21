@@ -2,6 +2,27 @@
 
 <h3>Edit Genre</h3>
 
+@if(genre != null)
+{
+    <GenreForm Genre="genre" OnValidSubmit="Edit"></GenreForm>
+}  
+
 @code {
     [Parameter] public int GenreId { get; set; }
-}
+    private Genre genre; 
+
+    protected override void OnInitialized()
+    {
+        // Todo: Retrive Genre by Id
+        genre = new Genre {
+            Id = GenreId,
+            Name = "Todo Genre Name"
+        };
+    }
+
+    private void Edit()
+    {   
+        Console.WriteLine("Edit method");
+        Console.WriteLine($"Id = {genre.Id}");
+    }
+}    

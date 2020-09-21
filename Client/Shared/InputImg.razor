@@ -1,0 +1,55 @@
+@using Tewr.Blazor.FileReader
+@using System.IO
+
+@inject IFileReaderService FileReader
+
+<div>
+    <label>@Label</label>
+    <div>
+        <input type="file" @ref="inputElement" @onchange="ImageFileSelected" accept=".jpg,.jpeg,.png" />
+    </div>
+</div>
+<div>
+    @if(imageBase64 != null)
+    {
+        <div>
+            <div style="margin:10px">
+                <img src="data:image/jpeg;base64, @imageBase64" style="width: 400px;" />
+            </div>
+        </div>
+    }
+    @if(ImageURL != null)
+    {
+        <div>
+            <div style="margin:10px">
+                <img src="@ImageURL" style="width: 400px;" />
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter] public string Label { get; set; } = "Image";
+    [Parameter] public string ImageURL { get; set; }
+    [Parameter] public EventCallback<string> OnSelectedImage { get; set; }
+    private string imageBase64;
+    private ElementReference inputElement;
+    
+
+    private async Task ImageFileSelected()
+    {
+        // Convert byte[] to Base64 string
+        foreach(var file in await FileReader.CreateReference(inputElement).EnumerateFilesAsync())
+        {
+            using(MemoryStream memorySteam = await file.CreateMemoryStreamAsync(1024 * 4))
+            {
+                var imageBytes = new byte[memorySteam.Length];
+                memorySteam.Read(imageBytes, 0, (int)memorySteam.Length);
+                imageBase64 = Convert.ToBase64String(imageBytes);
+                await OnSelectedImage.InvokeAsync(imageBase64);
+                ImageURL = null;    // To make sure only one image source is active
+                StateHasChanged();  // Force re-render
+            }
+        }
+    }
+}

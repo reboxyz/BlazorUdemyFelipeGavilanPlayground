@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "KrCe3ggriEYdFSwHAFPdCW/fm0xmqx1VGmu4EWDkFp8h+IlKUUUQQabKBCVK1k4y5ggsstmsA+CkQaTNvt0uew==",
+  "dgSpecHash": "sLsXD0nJgodQluVLEM7GuE+Ej4lMHhIekQZ8nE5MfDVvxKnOuWqqaV75PCWkZwv9fSkfjtsCxYM0Fglr/HiRzA==",
   "success": true,
   "projectFilePath": "/Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Server/BlazorMovies.Server.csproj",
   "expectedPackageFiles": [
+    "/Users/erwinrebosura/.nuget/packages/markdig/0.21.1/markdig.0.21.1.nupkg.sha512",
     "/Users/erwinrebosura/.nuget/packages/microsoft.aspnetcore.authorization/5.0.0-preview.7.20365.19/microsoft.aspnetcore.authorization.5.0.0-preview.7.20365.19.nupkg.sha512",
     "/Users/erwinrebosura/.nuget/packages/microsoft.aspnetcore.components/5.0.0-preview.7.20365.19/microsoft.aspnetcore.components.5.0.0-preview.7.20365.19.nupkg.sha512",
     "/Users/erwinrebosura/.nuget/packages/microsoft.aspnetcore.components.analyzers/5.0.0-preview.7.20365.19/microsoft.aspnetcore.components.analyzers.5.0.0-preview.7.20365.19.nupkg.sha512",
@@ -13,6 +14,7 @@
     "/Users/erwinrebosura/.nuget/packages/microsoft.aspnetcore.components.webassembly.httphandler/5.0.0-preview.7.20365.19/microsoft.aspnetcore.components.webassembly.httphandler.5.0.0-preview.7.20365.19.nupkg.sha512",
     "/Users/erwinrebosura/.nuget/packages/microsoft.aspnetcore.components.webassembly.server/5.0.0-preview.7.20365.19/microsoft.aspnetcore.components.webassembly.server.5.0.0-preview.7.20365.19.nupkg.sha512",
     "/Users/erwinrebosura/.nuget/packages/microsoft.aspnetcore.metadata/5.0.0-preview.7.20365.19/microsoft.aspnetcore.metadata.5.0.0-preview.7.20365.19.nupkg.sha512",
+    "/Users/erwinrebosura/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.0/microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "/Users/erwinrebosura/.nuget/packages/microsoft.extensions.configuration/5.0.0-preview.7.20364.11/microsoft.extensions.configuration.5.0.0-preview.7.20364.11.nupkg.sha512",
     "/Users/erwinrebosura/.nuget/packages/microsoft.extensions.configuration.abstractions/5.0.0-preview.7.20364.11/microsoft.extensions.configuration.abstractions.5.0.0-preview.7.20364.11.nupkg.sha512",
     "/Users/erwinrebosura/.nuget/packages/microsoft.extensions.configuration.binder/5.0.0-preview.7.20364.11/microsoft.extensions.configuration.binder.5.0.0-preview.7.20364.11.nupkg.sha512",
@@ -29,7 +31,8 @@
     "/Users/erwinrebosura/.nuget/packages/microsoft.extensions.primitives/5.0.0-preview.7.20364.11/microsoft.extensions.primitives.5.0.0-preview.7.20364.11.nupkg.sha512",
     "/Users/erwinrebosura/.nuget/packages/microsoft.jsinterop/5.0.0-preview.7.20365.19/microsoft.jsinterop.5.0.0-preview.7.20365.19.nupkg.sha512",
     "/Users/erwinrebosura/.nuget/packages/microsoft.jsinterop.webassembly/5.0.0-preview.7.20365.19/microsoft.jsinterop.webassembly.5.0.0-preview.7.20365.19.nupkg.sha512",
-    "/Users/erwinrebosura/.nuget/packages/system.net.http.json/5.0.0-preview.7.20364.11/system.net.http.json.5.0.0-preview.7.20364.11.nupkg.sha512"
+    "/Users/erwinrebosura/.nuget/packages/system.net.http.json/5.0.0-preview.7.20364.11/system.net.http.json.5.0.0-preview.7.20364.11.nupkg.sha512",
+    "/Users/erwinrebosura/.nuget/packages/tewr.blazor.filereader/2.0.0.20242/tewr.blazor.filereader.2.0.0.20242.nupkg.sha512"
   ],
   "logs": []
 }

@@ -2,6 +2,28 @@
 
 <h3>Edit Person</h3>
 
+@if (person != null)
+{
+    <PersonForm Person="person" OnValidSubmit="Edit"></PersonForm>
+}
+
 @code {
     [Parameter] public int PersonId { get; set; }
-}
+    private Person person;
+
+    protected override void OnInitialized()
+    {
+        // Todo: Retrieve Person by Id
+        person = new Person() {
+            Name = "Winnux Reboxyz",
+            DateOfBirth = DateTime.Today,
+            Biography = "Blah Blahhhhhh"
+        };
+    }
+
+    private void Edit()
+    {
+        Console.WriteLine("Edit");
+    }
+
+}    

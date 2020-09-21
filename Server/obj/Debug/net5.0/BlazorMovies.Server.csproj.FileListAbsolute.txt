@@ -195,3 +195,6 @@
 /Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Server/obj/Debug/net5.0/BlazorMovies.Server.dll
 /Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Server/obj/Debug/net5.0/BlazorMovies.Server.pdb
 /Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Server/obj/Debug/net5.0/BlazorMovies.Server.genruntimeconfig.cache
+/Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Server/bin/Debug/net5.0/Microsoft.Bcl.AsyncInterfaces.dll
+/Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Server/bin/Debug/net5.0/Tewr.Blazor.FileReader.dll
+/Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Server/bin/Debug/net5.0/Markdig.dll

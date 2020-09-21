@@ -10,6 +10,14 @@
     />
 </div>
 
+<CustomTypeAhead
+    SearchMethod="SearchMethod"
+>
+    <ResultTemplateItem>
+        @context
+    </ResultTemplateItem>
+</CustomTypeAhead>
+
 @code {
     private List<Movie> movies;
 
@@ -17,4 +25,14 @@
     {
         movies = MovieInMemoryRepository.GetMovies();
     }    
+
+    private async Task<IEnumerable<string>> SearchMethod(string searchText)
+    {
+        await Task.Delay(2000);
+        if (searchText == "test")
+        {
+            return Enumerable.Empty<string>();
+        }
+        return new List<string>() { "Winnux", "Reboxyz"};
+    }
 }
