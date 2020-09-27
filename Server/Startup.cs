@@ -6,6 +6,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
+using BlazorMovies.Server.Helpers;
+using Microsoft.AspNetCore.Http;
+using AutoMapper;
 
 namespace BlazorMovies.Server
 {
@@ -22,6 +26,24 @@ namespace BlazorMovies.Server
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<ApplicationDbContext>(opt => 
+            {   
+                //opt.UseLazyLoadingProxies();  // Note! Microsoft.EntityFrameworkCore.Proxies package
+                opt.UseSqlite(Configuration.GetConnectionString("DefaultConnection"));                // Note! Todo if Sqlite Server
+                //opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnectionSqlServer"));  // Note! Todo if MS SQL Server
+
+            });
+
+            services.AddAutoMapper(typeof(Startup));
+
+            //services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddHttpContextAccessor();
+            services.AddMvc()
+                .AddNewtonsoftJson(options => 
+                    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+
+            //services.AddScoped<IFileStorageService, AzureStorageService>();   // Todo: If AzureStorage
+            services.AddScoped<IFileStorageService, LocalAppStorageService>();  // Todo: If LocalStorage
 
             services.AddControllersWithViews();
             services.AddRazorPages();
