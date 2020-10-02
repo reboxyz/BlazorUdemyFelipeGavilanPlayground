@@ -1,9 +1,10 @@
 using Microsoft.EntityFrameworkCore;
 using BlazorMovies.Shared.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace BlazorMovies.Server
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext  // DbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options): base(options)
         {
@@ -14,10 +15,11 @@ namespace BlazorMovies.Server
         public DbSet<Person> People { get; set; }
         public DbSet<MoviesActors> MoviesActors { get; set; }
         public DbSet<MoviesGenres> MoviesGenres { get; set; }
+        public DbSet<MovieRating> MovieRatings { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
+            base.OnModelCreating(modelBuilder); // Note! Very important if we inherit from IdentityDbContext
 
             // *** START - Setup MoviesActors Composite Key and Many-to-many relationship
             modelBuilder.Entity<MoviesActors>().HasKey(ma => new { ma.MovieId, ma.PersonId});
@@ -61,7 +63,7 @@ namespace BlazorMovies.Server
             */       
 
             // *** END -
-        }
 
+        }
     }
 }

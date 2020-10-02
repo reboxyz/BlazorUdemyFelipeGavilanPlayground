@@ -6,6 +6,9 @@ using AutoMapper;
 using BlazorMovies.Server.Helpers;
 using BlazorMovies.Shared.DTO;
 using BlazorMovies.Shared.Entities;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,6 +16,7 @@ namespace BlazorMovies.Server.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class MoviesController: ControllerBase
     {
         private int limit = 6;
@@ -21,9 +25,11 @@ namespace BlazorMovies.Server.Controllers
         private readonly ApplicationDbContext _context;
         private readonly IFileStorageService _fileStorageService;
         private readonly IMapper _mapper;
+        private readonly UserManager<IdentityUser> _userManager;
 
-        public MoviesController(ApplicationDbContext context, IFileStorageService fileStorageService, IMapper mapper)
+        public MoviesController(ApplicationDbContext context, IFileStorageService fileStorageService, IMapper mapper, UserManager<IdentityUser> userManager)
         {
+            _userManager = userManager;
             _mapper = mapper;
             _fileStorageService = fileStorageService;
             _context = context;
@@ -53,6 +59,7 @@ namespace BlazorMovies.Server.Controllers
         }
 
         [HttpGet]
+        [AllowAnonymous]
         public async Task<ActionResult<IndexPageDTO>> GetMovies()
         {
             var moviesInTheaters = await _context.Movies.Where(x => x.InTheaters)
@@ -73,6 +80,7 @@ namespace BlazorMovies.Server.Controllers
         }
 
         [HttpGet("{id}")]
+        [AllowAnonymous]
         public async Task<ActionResult<DetailsMovieDTO>> GetMovieDetails(int id)
         {
             var movie = await _context.Movies.Where(x => x.Id == id)
@@ -81,6 +89,32 @@ namespace BlazorMovies.Server.Controllers
                             .FirstOrDefaultAsync();
 
             if (movie == null) { return NotFound(); }
+
+            // Get the Average Rating of the current movie
+            var averageVote = 0.0;
+            var userVote = 0;
+
+            if (await _context.MovieRatings.AnyAsync(x => x.MovieId == id))
+            {   
+                averageVote = await _context.MovieRatings.Where(x => x.MovieId == id)
+                                .AverageAsync(x => x.Rate);
+
+                // Check if User is logged in
+                if (HttpContext.User.Identity.IsAuthenticated)
+                {
+                    var user = await _userManager.FindByNameAsync(HttpContext.User.Identity.Name);
+                    //var user = await _userManager.FindByEmailAsync(HttpContext.User.Identity.Name);
+                    var userId = user.Id;
+
+                    var userVoteDB = await _context.MovieRatings
+                        .FirstOrDefaultAsync(x => x.MovieId == id && x.UserId == userId);
+
+                    if (userVoteDB != null)
+                    {
+                        userVote = userVoteDB.Rate; 
+                    }
+                }
+            }
 
             movie.MoviesActors = movie.MoviesActors.OrderBy(x => x.Order).ToList();
 
@@ -95,6 +129,9 @@ namespace BlazorMovies.Server.Controllers
                     Id = x.PersonId
                 }
             ).ToList();
+
+            model.UserVote = userVote;
+            model.AverageVote = averageVote;
 
             return model; 
         }
@@ -173,6 +210,7 @@ namespace BlazorMovies.Server.Controllers
         }
 
         [HttpPost("filter")]  // Note! HttpGet could be used instead using the [FromQuery] but due to the fact that there are many parameter fields, it is convenient to use HttpPost
+        [AllowAnonymous]
         public async Task<ActionResult<List<Movie>>> Filter(FilterMoviesDTO filterMoviesDTO)
         {
             var moviesQueryable = _context.Movies.AsQueryable();

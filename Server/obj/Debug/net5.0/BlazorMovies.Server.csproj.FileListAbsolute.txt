@@ -257,3 +257,5 @@
 /Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Server/bin/Debug/net5.0/Newtonsoft.Json.Bson.dll
 /Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Server/bin/Debug/net5.0/AutoMapper.dll
 /Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Server/bin/Debug/net5.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Server/bin/Debug/net5.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Server/bin/Debug/net5.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
