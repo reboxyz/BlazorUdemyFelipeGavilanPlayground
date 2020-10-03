@@ -1,0 +1,73 @@
+[GigaCourse.com] Udemy - Programming in Blazor – ASP.NET Core 3.1
+By: Felipe Gavilan
+https://github.com/gavilanch/BlazorMovies
+
+1 - 1, 2, 3, 4, 5, 6, 7, 8
+2 - 1, 2, 3, 4, 5, 6, 7
+3 - 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+4 - 1, 2, 3, 4, 5, 6, 7, 8
+5 - 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
+6 - 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+7 - 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+8 - 1, 2, 3, 4, 5, 6
+
+
+
+cd BlazorMovies
+cd BlazorMovies
+dotnet new blazorwasm --hosted
+cd Server
+dotnet watch run
+
+
+
+mkdir RockPaperScissors
+cd RockPaperScissors
+dotnet new sln
+mkdir RockPaperScissorsApp
+cd RockPaperScissorsApp
+dotnet new blazorwasm
+cd ..
+dotnet sln add RockPaperScissorsApp/
+
+ 
+"DefaultConnection": "Server=localhost; Database=WizLib; User Id=sa; Pwd=reallyStrongPwd123; MultipleActiveResultSets=true;"
+
+
+Dotnet EF Migration Commands:
+cd Server
+dotnet ef migrations add "Initial"
+dotnet ef database update 
+dotnet ef database update 0  # Delete all migrations
+dotnet ef migrations add "IdentityTables”   # Identity EntityFrameworkCore
+dotnet ef migrations add "MovieRating"
+
+dotnet ef migrations add "InsertAdminRole”    # take note no 1
+dotnet ef migrations add "AdminUserAdded”   # take note no 2
+
+dotnet ef migrations script InsertAdminRole AdminUserAdded --output AdminOutput.sql    # we extract the SQL script of the migrations from  "InsertAdminRole”  to   "AdminUserAdded”
+
+
+Azure Storage
+1.) Created Azure Storage to contain the pictures and images for Posters and Actor’s images
+2.) Connection String: DefaultEndpointsProtocol=https;AccountName=blazormoviestutorial;AccountKey=7UZl+St0WsLhGNncJv3FDaLIlwlXh+mB/fQLvavuy6uaFE/CWCwxZatwrG7BlI/HuiDAZnwLbMkuH/Ac7wO5BA==;EndpointSuffix=core.windows.net
+3.) NuGet Package: Microsoft.WindowsAzure.Storage
+
+https://blazormoviestutorial.blob.core.windows.net/people/afe7a3a4-076e-4fed-bffd-bf7426fa4fb2.jpg
+
+Important Notes On Login/Register Controller and LoginService:
+1. Creating UserToken (JWT Token) is handled by Login/Register Controller which will return a UserInfo encapsulating a JWT token to the Client
+2. In the Client, there is LoginService that will make use of the JWT Token and store it in the LocalStorage so that it can be manipulated to perform login/logout mechanism via the Browser.
+
+.gitignore file create command in dotnet
+dotnet new gitignore
+
+Command to create package to publish:
+dotnet publish -c Release -o publish --self-contained true BlazorMovies.sln
+
+Deployment to IIS
+1.) Install .Net Core Hosting Bundle with a version of your choosing
+
+
+
+
