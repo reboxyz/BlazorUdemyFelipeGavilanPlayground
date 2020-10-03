@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using BlazorMovies.Shared.Entities;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using System.Security.Claims;
 
 namespace BlazorMovies.Server
 {
@@ -63,6 +65,37 @@ namespace BlazorMovies.Server
             */       
 
             // *** END -
+
+
+            // Create Admin User Account
+            /*  Note! This is needed to create a Migration script for Admin User Account to jump start the Apps
+            //var roleAdminId = "b3cb30a9-2d9f-4f3f-9971-b44bbebd2c6d";
+            var userAdminId = "bbed16ef-5ff6-4866-b5f6-609a6b2ff714";
+
+            var hasher = new PasswordHasher<IdentityUser>();
+
+            var userAdmin = new IdentityUser()
+            {
+                Id = userAdminId,
+                Email = "reboxyz@gmail.com",
+                UserName = "reboxyz@gmail.com",
+                NormalizedEmail = "reboxyz@gmail.com",
+                NormalizedUserName = "reboxyz@gmail.com",
+                EmailConfirmed = true,
+                PasswordHash = hasher.HashPassword(null, "Pa$$w0rd"),
+            };
+            
+            modelBuilder.Entity<IdentityUser>().HasData(userAdmin);
+
+            // Add Role to User Admin
+            modelBuilder.Entity<IdentityUserClaim<string>>()
+                .HasData(new IdentityUserClaim<string>() {
+                    Id = 2,                             // Note! Change this ID Number accordingly
+                    ClaimType = ClaimTypes.Role,
+                    ClaimValue = "Admin",
+                    UserId = userAdminId
+                });
+            */
 
         }
     }
