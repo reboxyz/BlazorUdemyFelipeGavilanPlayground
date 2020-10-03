@@ -1,5 +1,7 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BlazorMovies.Shared.Entities
 {
@@ -12,5 +14,11 @@ namespace BlazorMovies.Shared.Entities
         public string Picture { get; set; }
         [Required]
         public DateTime? DateOfBirth { get; set; }
+
+        // Many-to-many relationship between Movie and Actors    
+        public List<MoviesActors> MoviesActors { get; set; } = new List<MoviesActors>();
+        [NotMapped]
+        public string Character { get; set; }
+
     }
 }

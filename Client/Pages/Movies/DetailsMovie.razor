@@ -1,13 +1,82 @@
 @page "/movie/{MovieId:int}/{MovieTitle}"
+@inject IMoviesRepository MoviesRepository
+@inject IRatingRepository RatingRepository
+@inject IDisplayMessage DisplayMessage
 
-<h3>Movie Details</h3>
+@if (model == null)
+{
+    <text>Loading...</text>
+} else 
+{
+    <h2>@model.Movie.Title (@model.Movie.ReleaseDate.Value.ToString("yyyy"))</h2>
+    for (int i = 0; i < model.Genres.Count; i++)
+    {
+        @linkGenre(model.Genres[i])
+        @if (i != model.Genres.Count - 1)
+        {
+            <text>, </text>
+        }
+    }
+    <text> | </text> <span>@model.Movie.ReleaseDate.Value.ToString("dd MMM yyyy")</span>
+    <text> | Average: </text>@model.AverageVote.ToString("0.#") <text>/5 | Your vote: </text>
+    <Rating MaximumRating="5" SelectedRating="model.UserVote" OnVote="OnVote" />
+
+    <div style="display: flex">
+        <span style="display: inline-block; margin-right: 5px;">
+            <img src="@model.Movie.Poster" style="width: 225px; height: 315px" />
+        </span>
+        <span>
+            <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/@model.Movie.Trailer" 
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+            ></iframe>
+        </span>
+    </div>
+    <div style="margin-top: 10px;">
+        <h3>Summary</h3>
+        <div>
+            <RenderMarkdown MarkDownContent="@model.Movie.Summary" />
+        </div>
+    </div>
+    <div style="margin-top: 10px;">
+        <h3>Actors</h3>
+        <div style="display: flex; flex-direction: column">
+            @foreach (var actor in model.Actors)
+            {
+                <div style="margin-bottom: 2px">
+                    <img style="width: 50px;" src="@actor.Picture" />
+                    <span style="display: inline-block; width: 200px">
+                        <a href="/person/@actor.Id/@actor.Name.Replace(" ", "-")">@actor.Name</a>
+                    </span>
+                    <span style="display: inline-block; width: 45px;">...</span>
+                    <span>@actor.Character</span>
+                </div>   
+            } 
+        </div>
+    </div>
+}
+
+
 
 @code {
     [Parameter] public int MovieId { get; set; }
     [Parameter] public string MovieTitle { get; set; }
+    private RenderFragment<Genre> linkGenre = (genre) => @<a href="movies/search?genreId=@genre.Id">@genre.Name</a>;
 
-    protected override void OnInitialized()
+    DetailsMovieDTO model;
+
+    protected override async Task OnInitializedAsync()
     {
-        Console.WriteLine($"MovieId: {MovieId}");
+        model = await MoviesRepository.GetDetailsMovieDTO(MovieId);
+    }
+
+    private async Task OnVote(int selectedRate)
+    {
+        model.UserVote = selectedRate;
+        var movieRating = new MovieRating() { Rate = selectedRate, MovieId = MovieId };
+        await RatingRepository.Vote(movieRating);
+        await DisplayMessage.DisplaySuccessMessage("Your vote has been received!");
     }
 }    

@@ -10,6 +10,7 @@
     <PackageReference Include="System.Net.Http.Json" Version="5.0.0-preview.7.20364.11"/>
     <PackageReference Include="Tewr.Blazor.FileReader" Version="2.0.0.20242"/>
     <PackageReference Include="Markdig" Version="0.21.1"/>
+    <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="5.0.0-preview.7.20365.19"/>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Shared\BlazorMovies.Shared.csproj"/>

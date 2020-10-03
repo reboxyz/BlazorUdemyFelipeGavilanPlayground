@@ -17,5 +17,21 @@ namespace BlazorMovies.Client.Helpers
             // is set in the index.html as <script src="js/CustomUtilities.js"></script>
             await jSRuntime.InvokeVoidAsync("my_function", message);
         }
+
+        public static ValueTask<object> SetInLocalStorage(this IJSRuntime jSRuntime, string key, string content)
+        {
+            return jSRuntime.InvokeAsync<object>("localStorage.setItem", key, content);
+        }
+
+        public static ValueTask<string> GetFromLocalStorage(this IJSRuntime jSRuntime, string key)
+        {
+            return jSRuntime.InvokeAsync<string>("localStorage.getItem", key);
+        }
+
+        public static ValueTask<object> RemoveItem(this IJSRuntime jSRuntime, string key)
+        {
+            return jSRuntime.InvokeAsync<object>("localStorage.removeItem", key);
+        }
+
     }
 }

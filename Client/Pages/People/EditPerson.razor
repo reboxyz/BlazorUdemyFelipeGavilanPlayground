@@ -1,4 +1,7 @@
 @page "/person/edit/{PersonId:int}"
+@inject IPersonRepository PersonRepository
+@inject NavigationManager NavigationManager
+@attribute [Authorize]
 
 <h3>Edit Person</h3>
 
@@ -11,19 +14,15 @@
     [Parameter] public int PersonId { get; set; }
     private Person person;
 
-    protected override void OnInitialized()
+    protected override async Task OnInitializedAsync()
     {
-        // Todo: Retrieve Person by Id
-        person = new Person() {
-            Name = "Winnux Reboxyz",
-            DateOfBirth = DateTime.Today,
-            Biography = "Blah Blahhhhhh"
-        };
+        person = await PersonRepository.GetPersonById(PersonId);
     }
 
-    private void Edit()
+    private async Task Edit()
     {
-        Console.WriteLine("Edit");
+        await PersonRepository.UpdatePerson(person);
+        NavigationManager.NavigateTo("people");
     }
 
 }    

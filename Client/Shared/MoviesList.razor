@@ -1,4 +1,5 @@
 @inject IJSRuntime JSRuntime
+@inject IMoviesRepository MoviesRepository 
 
 <div class="movies-container">
     <GenericList List="Movies">
@@ -6,6 +7,7 @@
             <IndividualMovie 
                 Movie="movie" 
                 DeleteMovie="DeleteMovie"
+                @key="movie.Id"
             />
         </ElementTemplate>
         <NullContent>
@@ -30,6 +32,8 @@
 
         if (confirmed)
         {
+            await MoviesRepository.DeleteMovie(movie.Id);
+
             Movies.Remove(movie);
         }    
     }

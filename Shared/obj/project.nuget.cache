@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "hQnUqJNeBUepzOAHLGY+NL3YWs32nL9+aaSwtiznP/HOwRP0G4cC+YfarmeaWl9U5+yQMnBbU/SIH/BuuOaJ/w==",
+  "dgSpecHash": "fpj4mhCYnQtvZU5kzQ83QLq2C2x42GKGuscsZDMgg3ObpNgbgdWEcJvJeCpYvGT6dBap8ttO+ruc8fNit5lfxw==",
   "success": true,
   "projectFilePath": "/Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Shared/BlazorMovies.Shared.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/erwinrebosura/.nuget/packages/microsoft.extensions.dependencyinjection/5.0.0-preview.7.20364.11/microsoft.extensions.dependencyinjection.5.0.0-preview.7.20364.11.nupkg.sha512",
+    "/Users/erwinrebosura/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/5.0.0-preview.7.20364.11/microsoft.extensions.dependencyinjection.abstractions.5.0.0-preview.7.20364.11.nupkg.sha512",
+    "/Users/erwinrebosura/.nuget/packages/microsoft.extensions.logging/5.0.0-preview.7.20364.11/microsoft.extensions.logging.5.0.0-preview.7.20364.11.nupkg.sha512",
+    "/Users/erwinrebosura/.nuget/packages/microsoft.extensions.logging.abstractions/5.0.0-preview.7.20364.11/microsoft.extensions.logging.abstractions.5.0.0-preview.7.20364.11.nupkg.sha512",
+    "/Users/erwinrebosura/.nuget/packages/microsoft.extensions.options/5.0.0-preview.7.20364.11/microsoft.extensions.options.5.0.0-preview.7.20364.11.nupkg.sha512",
+    "/Users/erwinrebosura/.nuget/packages/microsoft.extensions.primitives/5.0.0-preview.7.20364.11/microsoft.extensions.primitives.5.0.0-preview.7.20364.11.nupkg.sha512"
+  ],
   "logs": []
 }

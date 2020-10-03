@@ -87,6 +87,34 @@ using BlazorMovies.Shared.Entities;
 #line hidden
 #nullable disable
 #nullable restore
+#line 12 "/Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Client/_Imports.razor"
+using BlazorMovies.Shared.DTO;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 14 "/Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Client/_Imports.razor"
+using BlazorMovies.Client.Repository;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 15 "/Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Client/_Imports.razor"
+using Microsoft.AspNetCore.Components.Authorization;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 16 "/Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Client/_Imports.razor"
+using Microsoft.AspNetCore.Authorization;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 2 "/Users/erwinrebosura/Documents/Playground/Blazor/FelipeGavilan/BlazorMovies/Client/Pages/FetchData.razor"
 using BlazorMovies.Shared;
 

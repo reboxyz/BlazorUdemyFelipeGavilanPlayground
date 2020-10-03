@@ -2879,6 +2879,92 @@
         }
       },
       {
+        "HashCode": 922844799,
+        "Kind": "Components.Component",
+        "Name": "BlazorMovies.Client.Pages.Users.IndexUsers",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "IndexUsers"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorMovies.Client.Pages.Users.IndexUsers"
+        }
+      },
+      {
+        "HashCode": 666837893,
+        "Kind": "Components.Component",
+        "Name": "BlazorMovies.Client.Pages.Users.IndexUsers",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorMovies.Client.Pages.Users.IndexUsers"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorMovies.Client.Pages.Users.IndexUsers",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1553818808,
+        "Kind": "Components.Component",
+        "Name": "BlazorMovies.Client.Pages.Users.EditUser",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "EditUser"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "UserId",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "UserId"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorMovies.Client.Pages.Users.EditUser"
+        }
+      },
+      {
+        "HashCode": 183856181,
+        "Kind": "Components.Component",
+        "Name": "BlazorMovies.Client.Pages.Users.EditUser",
+        "AssemblyName": "BlazorMovies.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorMovies.Client.Pages.Users.EditUser"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "UserId",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "UserId"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorMovies.Client.Pages.Users.EditUser",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 1057179990,
         "Kind": "Components.Component",
         "Name": "BlazorMovies.Client.Pages.Auth.Login",
@@ -3760,92 +3846,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "BlazorMovies.Client.Pages.People.PersonForm",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1553818808,
-        "Kind": "Components.Component",
-        "Name": "BlazorMovies.Client.Pages.Users.EditUser",
-        "AssemblyName": "BlazorMovies.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "EditUser"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "UserId",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "UserId"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorMovies.Client.Pages.Users.EditUser"
-        }
-      },
-      {
-        "HashCode": 183856181,
-        "Kind": "Components.Component",
-        "Name": "BlazorMovies.Client.Pages.Users.EditUser",
-        "AssemblyName": "BlazorMovies.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorMovies.Client.Pages.Users.EditUser"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "UserId",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "UserId"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorMovies.Client.Pages.Users.EditUser",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 922844799,
-        "Kind": "Components.Component",
-        "Name": "BlazorMovies.Client.Pages.Users.IndexUsers",
-        "AssemblyName": "BlazorMovies.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "IndexUsers"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorMovies.Client.Pages.Users.IndexUsers"
-        }
-      },
-      {
-        "HashCode": 666837893,
-        "Kind": "Components.Component",
-        "Name": "BlazorMovies.Client.Pages.Users.IndexUsers",
-        "AssemblyName": "BlazorMovies.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorMovies.Client.Pages.Users.IndexUsers"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorMovies.Client.Pages.Users.IndexUsers",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

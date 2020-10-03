@@ -28,6 +28,9 @@ namespace BlazorMovies.Shared.Entities
         }
         // Many-to-many relationship between Movie and Genres
         public List<MoviesGenres> MoviesGenres { get; set; } = new List<MoviesGenres>();
+        
+        // Many-to-many relationship between Movie and Actors    
+        public List<MoviesActors> MoviesActors { get; set; } = new List<MoviesActors>();
 
     }
 }

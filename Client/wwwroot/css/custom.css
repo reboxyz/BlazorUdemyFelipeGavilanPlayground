@@ -161,3 +161,7 @@ blazored-typeahead__controls {
     -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
     animation: sk-scaleout 1.0s infinite ease-in-out;
 }
+
+.checked {
+    color: orange;
+}
